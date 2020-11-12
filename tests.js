@@ -29,7 +29,7 @@ describe('sayHello', function(){
     });
 
     it("Returns Hello Alex when given input", function(){
-        expect(sayHello("Alex")).toBe("Hello, Alex!");
+        expect(sayHello("Alesx")).toBe("Hello, Alex!");
     })
 
     it("Returns Hello Pat when given input", function(){
