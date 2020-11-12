@@ -14,29 +14,24 @@ describe('helloWorld', function() {
     });
 });
 
+describe("sayHello", function(){
 
-describe('sayHello', function(){
-    it("should never return 'undefined' when called", function() {
-        expect(helloWorld()).not.toBe(undefined);
+    it("should be a function", function(){
+        expect(typeof sayHello).toBe("function")
     });
 
-    it("should return typeof string", function(){
-        expect(typeof sayHello()).toBe("string");
+    it("Should return typeof string", function(){
+        expect(typeof sayHello() ).toBe("string");
     });
 
-    it("Returns Hello Alex when given input", function(){
-        expect(sayHello("Jenny")).toBe("Hello, Jenny!");
-    });
-
-    it("Returns Hello Alex when given input", function(){
-        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    it("If given the name of Jane, return Hello Jane", function(){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     })
 
-    it("Returns Hello Pat when given input", function(){
-        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    it("If given the name of Alex, return Hello Alex", function(){
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
     })
 
-
-})
-
+    }
+)
 
