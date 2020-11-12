@@ -32,6 +32,10 @@ describe("sayHello", function(){
         expect(sayHello("Alex")).toBe("Hello, Alex!")
     })
 
+    it("If given the name of Alex, return Hello Pat", function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    })
+
     }
 )
 
