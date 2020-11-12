@@ -13,5 +13,4 @@ function sayHello(input){
     }else{
         return ""
     }
-
 }
