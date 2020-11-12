@@ -29,12 +29,13 @@ describe('sayHello', function(){
     });
 
     it("Returns Hello Alex when given input", function(){
-        expect(sayHello("Alesx")).toBe("Hello, Alex!");
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
     })
 
     it("Returns Hello Pat when given input", function(){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
+
 
 })
 
