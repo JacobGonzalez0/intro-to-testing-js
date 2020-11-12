@@ -23,6 +23,19 @@ describe('sayHello', function(){
     it("should return typeof string", function(){
         expect(typeof sayHello()).toBe("string");
     });
+
+    it("Returns Hello Alex when given input", function(){
+        expect(sayHello("Jenny")).toBe("Hello, Jenny!");
+    });
+
+    it("Returns Hello Alex when given input", function(){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    })
+
+    it("Returns Hello Pat when given input", function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    })
+
 })
 
 
